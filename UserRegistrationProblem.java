@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import org.junit.runner.JUnitCore;
 import java.util.regex.Pattern;
 public class UserRegistrationProblem {
     @FunctionalInterface
@@ -31,7 +32,7 @@ public class UserRegistrationProblem {
         }
     };
 
-    public boolean validate(String type,String value){
+    public boolean validate(String type, String value){
        boolean isValid = validator.check(type,value);
        if(isValid){
            return true;
@@ -86,6 +87,5 @@ public class UserRegistrationProblem {
         else{
             System.out.println("Incorrect");
         }
-
     }
 }
